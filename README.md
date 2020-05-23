@@ -1,2 +1,2 @@
 # Heckermen
-You view our personal team repo [here](https://tinyurl.com/heckermen).
+View our personal team repo [here](https://tinyurl.com/heckermen).
