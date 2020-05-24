@@ -1,0 +1,184 @@
+* {
+    font-family: 'Jost';
+}
+
+body {
+    background-color: black;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-bg {
+    height: 100vh;
+    background-image: url('/static/action/hyd_zoom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.navbar-black {
+    background-color: #00000000 !important;
+}
+
+.nav-btn {
+    font-weight: 500;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.outline-btn {
+    border-width: 2px !important;
+    font-weight: 500;
+}
+
+.po-icon {
+    width: 48px;
+    height: 48px;
+    filter: invert(100%) grayscale(100%) brightness(100%);
+}
+
+.po-icon:hover {
+    filter: none;
+}
+
+
+.home-card {
+    max-width: 500px;
+    background-color: #161616 !important;
+}
+
+.reg-header {
+    max-width: 500px;
+    color: #eee;
+    font-size: 56px;
+}
+
+.fin-h {
+    margin-bottom: -20px;
+}
+
+.pre-h {
+    margin-bottom: 20px;
+}
+
+.contact-hint {
+    color: #555;
+    margin-top: -10px;
+}
+
+.search-dt {
+    color: #eee;
+}
+
+.s-date {
+    font-size: 20px;
+    color: #b3b3b3;
+    margin-bottom: 0;
+}
+
+.s-time {
+    font-size: 56px;
+}
+
+#trip label, #reg label {
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+#trip input, #reg input {
+    background-color: #000000;
+    border-color: black !important;
+    color: #eee;
+    font-size: 24px;
+}
+
+.form-dd {
+    background-color: #000000;
+    color: #eee;
+    border-color: black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.dt-gray {
+    color: #888 !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+.search-result-categories>li>a {
+    color: #b6b6b6;
+    font-weight: 400
+}
+
+.search-result-categories>li>a:hover {
+    background-color: #ddd;
+    color: #555
+}
+
+.search-result-categories>li>a>.glyphicon {
+    margin-right: 5px
+}
+
+.search-result-categories>li>a>.badge {
+    float: right
+}
+
+.search-results-count {
+    margin-top: 10px
+}
+
+.search-result-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.search-result-item:after,
+.search-result-item:before {
+    content: " ";
+    display: table
+}
+
+.search-result-item:after {
+    clear: both
+}
+.search-result-item .info {
+    margin-top: 2px;
+    font-size: 20px;
+    color: #999
+}
+
+.search-result-item .description {
+    font-size: 13px
+}
+
+.search-result-item-metaheading {
+    font-weight: 300;
+    color: #EEE;
+}
+
+.search-result-item-heading-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.search-result-item-heading {
+    font-weight: 400;
+    color: #EEE;
+}
+
+.search-result-item-heading>a {
+    color: #eee;
+}

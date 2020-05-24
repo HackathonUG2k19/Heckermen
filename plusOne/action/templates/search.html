@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title> +1 | Search </title>
+{% endblock %}
+
+{% block body %}
+<div class="container reg-header fin-h text-left pt-5"> Active trips </div>
+<div class="container overflow-hidden pt-5">
+    <div class="container overflow-auto centered">
+
+        {% for object in object_list %}
+            {% if forloop.counter0|divisibleby:3 %}
+                {% if forloop.counter0 != 0 %}
+                    </div>
+                {% endif %}
+                <div class="row py-2">
+            {% endif %}
+        <div class="col m-2">
+        <section class="search-result-item home-card shadow-lg">
+            <div class="row">
+                <div class="col">
+                    <p class="search-dt s-date">{{ object.journey_date }}
+                    <h1 class="search-dt s-time">{{ object.journey_time }}</h1>
+                    <div class="search-result-item-heading-label pt-3"> TO </div>
+                    <h4 class="search-result-item-heading">{{ object.destination }}</h4>
+                    <div class="search-result-item-heading-label pt-3"> FROM </div>
+                    <h4 class="search-result-item-heading">{{ object.source }}</h4>
+                </div>
+                <div class="col-xs px-3 text-right">
+                    <form action="trip/{{ object.id }}" method="POST"> {% csrf_token %}
+                        <button class="btn btn-outline-danger outline-btn btn-md" >+1</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+        {% endfor %}
+        </div>
+
+    </div>
+    <div class="centered">
+        <form action="add/">
+            <button type="submit" class="btn btn-outline-info outline-btn mt-5 mb-5"> MAKE A NEW TRIP </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
